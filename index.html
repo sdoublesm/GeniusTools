@@ -1,0 +1,107 @@
+<html>   
+<!-- 
+    ✦ made by @sdoublesm in 2021. ×‿× 
+-->
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>GeniusTools</title>
+    <link rel="shortcut icon" type="image/x-icon" href="https://larsbutnotleast.xyz/genius/res/favicon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="itunes.js"></script>
+    <script src="script.js"></script>
+
+    <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- header -->
+    <div class="header">
+        <a href="."><img src="logo.png" width="120" height="60" align="middle"></a>
+    </div>
+    
+    <!-- main -->
+    <div class="main">
+
+        <!-- tab buttons -->
+        <div class="tabcontainer">
+            <div class="tab">
+                <button class="tablinks active" onclick="openTab(event, 'info')">
+                    <i class="fa fa-info" style="padding-right: 6px;" aria-hidden="true"></i>Info</button>
+                <button class="tablinks" onclick="openTab(event, 'iTunes')">
+                    <i class="fa fa-music" style="padding-right: 6px;" aria-hidden="true"></i>iTunes Artworks</button>
+                <button class="tablinks" onclick="openTab(event, 'zerow')">
+                    <i class="fa fa-chevron-down" style="padding-right: 6px;" aria-hidden="true"></i>zero-width space</button>
+                <button class="tablinks" onclick="openTab(event, 'jpg2png')">
+                    <i class="fa fa-exchange" style="padding-right: 6px;" aria-hidden="true"></i>JPG to PNG</button>
+                <button class="tablinks" onclick="openTab(event, 'extension')">
+                    <i class="fa fa-puzzle-piece" style="padding-right: 6px;" aria-hidden="true"></i>Extension</button>
+            </div>
+        </div>
+
+        <div class="content-container">
+            <!-- info -->
+            <div id="info" class="tabcontent" style="display:block">
+                <h1>Benvenuto in GeniusTools!</h1>
+                <p align="left">GeniusTools è un sito (e sarà presto un'estensione) che fornisce una serie di strumenti utili alla produttività su Genius.</p>
+                <p align="left">Creato nell'agosto 2021 da <a href="https://genius.com/sdoublesm">@sdoublesm</a>, il sito è liberamente ispirato a <a href="https://larsbutnotleast.xyz/genius/">GeniusGraph</a> e non è affiliato o in alcun modo associato con Genius Media Group Inc.</p>
+                <p class="credits" align="left">
+                    L'iTunes Artwork Finder è basato sullo script di <a href="https://bendodson.com/">Ben Dodson</a>, ottimizzato per Genius da <a href="https://genius.com/homesweethole">@homesweethole</a>, mentre il convertitore di file da JPG a PNG (per il momento) non è altro che <a href="https://jpgtopng.xyz/">jpgtopng.xyz</a>.
+                </p>
+                <hr>
+                <p class="version">Version: 1.0</p>
+
+            
+            </div>
+            
+            <!-- iTunes Artworks Finder -->
+           <div id="iTunes" class="tabcontent">
+                <form class="form" action="" method="get" accept-charset="utf-8" id="iTunesSearch">
+                    <input type="text" class="itunes-input" name="query" id="query" />
+                    <select class="itunes-select" name="entity" id="entity">
+                            <option value="album">Album</option>
+                            <option value="podcast">Podcast</option>
+                    </select>
+                    <select class="itunes-select" name="country" id="country"></select>
+                    <input type="submit" class="itunes-submit" value="Search" />
+                </form>
+                <div class="results" id="results">
+                </div>
+            </div>
+            
+            <!-- zero-width space -->
+            <div id="zerow" class="tabcontent" href="#">
+                <input class="zerow-input" type="text" value="​" id="input">
+                <button class="zerow-submit" onclick="copyText()">Copy</button>
+                <button class="zerow-submit" onclick="resetText()">Reset</button>  
+                <div class="description" align="left">
+                    <p>Su Genius per forzare l'iniziale minuscola abbiamo bisogno di un particolare carattere, denominato "zero-width space", che preceda la prima lettera di un titolo o del nome di un artista.
+                    <br><br>Nel box qui sopra è attivo lo zero-width space, ti basterà inserire la tua stringa di testo e copiarla. Clicca 'Reset' per riportare il box allo stato iniziale.
+                </p>
+                </div>
+            </div>
+
+            <!-- JPG to PNG converter -->
+            <div id="jpg2png" class ="tabcontent">
+                <iframe class="converter-frame" src="https://jpgtopng.xyz/"></iframe>
+            </div>
+
+            <!-- Extension -->
+            <div id="extension" class ="tabcontent">
+                <h3><br>soon...</h3>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
+

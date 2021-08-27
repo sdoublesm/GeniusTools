@@ -1,0 +1,260 @@
+/* -- removes 000webhost watermark ------------------------- */
+
+img[src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png"] {
+    display: none;
+}
+
+/* --------------------------------------------------------- */
+
+html,body{
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+/* --------------------------------------------------------- */
+
+/* for desktops */
+@media (max-width: 1200px) {
+    html {
+        zoom: 230%;
+	}
+} 
+
+/* for laptops */
+@media (max-width: 991px) {
+    html {
+        zoom: 200%;
+	}
+} 
+
+/* for large tablets */
+@media (min-width: 768px) and (max-width: 990px) {
+	html {
+        zoom: 180%;
+	}
+} 
+
+/* for smaller tablets */
+@media (max-width: 768px) {
+	html {
+        zoom: 150%;
+	}
+} 
+
+/* for cellphones */
+@media (max-width: 500px) {
+	html {
+        zoom: 100%;
+	}
+} 
+
+/* --------------------------------------------------------- */
+
+body {
+  background: #000000;
+  font-family: "Roboto", sans-serif;
+}
+
+.header {
+  padding: 8px;
+  text-align: center;
+  background: #ffff64;
+  height: 60;
+}
+
+.main {
+  max-width: 500px;
+  margin: auto;
+  color: white;
+}
+
+
+/* -------------------------------------------------------------- */
+
+.tabcontainer {
+  margin: 0px;
+  padding: 0px;
+  padding-left: 5px;
+  padding-right: 5px;
+  text-align: center;
+}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  background-color: black;
+  margin-right: 0px;
+  padding-bottom: 10px;
+  display: inline-block;
+  white-space: nowrap;
+  font-size: 13px;
+  text-align: center;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  border-radius: 9px 9px 9px 9px;
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 12px 10px;
+  transition: 0.2s;
+  margin-right: 8px;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  margin-top: 10px
+}
+
+
+.tab button:hover {
+  background-color:rgb(83, 83, 83);
+  margin: auto;
+  margin-right: 8px;
+  color: black;
+  margin-top: 10px
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ffff64;
+  margin-right: 8px;
+  color: black;
+  margin-top: 10px
+}
+
+
+
+
+/* --------------------------------------------------------- */
+
+.content-container {
+  /*border: 1px solid grey;
+  border-top: none;*/
+  margin: auto;
+  max-width: 500px;
+
+}
+
+.tabcontent {
+  display: none;
+  margin-top: 10px;
+  text-align: center;
+  padding: 30px;
+  padding-top: 0px; 
+
+} 
+
+/* --- info ------------------------------ */
+
+.version {
+  font-size: 12px;
+}
+
+
+/* --- iTunes Artworks Finder ------------------------------ */
+
+
+.form {
+  text-align: center;
+}
+
+.itunes-select, .itunes-input, .itunes-submit {
+  border-radius: 3px 3px 3px 3px;
+  width: auto;
+  background-color: white;
+  color: black;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  border: none;
+  padding: 5px;
+  margin: 5px;
+}
+
+
+
+.results {
+  text-align: center;
+  margin-top: 25px;
+}
+
+img {
+  max-width: 350px;
+  max-height: 350px;
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+
+h3 {
+  margin: 0px;
+}
+
+.imgurl{
+  font-size: 13px;
+  padding: 0px;
+}
+
+a:link{
+  text-decoration: none;
+  color:rgb(201, 201, 201);
+}
+
+a:visited {
+  text-decoration: none;
+  color:rgb(201, 201, 201);
+}
+
+a:hover {
+  text-decoration: none;
+  color: #ffff64
+}
+
+
+/* --- zero-width space ------------------------------------ */
+
+.zerow-input {
+  border-radius: 3px 3px 3px 3px;
+  text-align: left;
+  width: auto;
+  background-color: white;
+  color: black;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  border: none;
+  padding: 5px;
+  width: 55%;
+}
+
+.zerow-submit {
+  border-radius: 3px 3px 3px 3px;
+  text-align: center;
+  width: auto;
+  background-color: white;
+  color: black;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  border: none;
+  padding: 5px;
+  width: 20%;
+}
+
+.description {
+  padding-top: 20px;
+}
+
+/* --- JPG2PNG Converter ----------------------------------- */
+
+.converter-frame {
+  width: 100%;
+  height: 150%;
+  border: 0px;
+}
+
+/* --- extension ------------------------------------ */
+
