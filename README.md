@@ -1,4 +1,4 @@
-# GeniusTools
+# GeniusTools [dead]
 
 GeniusTools è un sito (e sarà presto un'estensione) che fornisce una serie di strumenti utili alla produttività su Genius.
 
